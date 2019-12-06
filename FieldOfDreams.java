@@ -11,7 +11,8 @@ public class FieldOfDreams {
         String hint3=args[3];
         char[] wordToArray=word.toCharArray();
         char[] emptyArray=new char[wordToArray.length];
-        Arrays.fill(emptyArray, '_');
+        Arrays.fill(emptyArray, '_'); 
+        System.out.println("There are "+wordToArray.length+" letters in the word");
         System.out.println("Hint #1 "+hint1);
         System.out.println("Hint #2 "+hint2);
         System.out.println("Hint #3 "+hint3);
