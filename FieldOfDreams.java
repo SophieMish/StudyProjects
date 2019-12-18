@@ -17,7 +17,8 @@ public class FieldOfDreams {
         System.out.println("Hint #2 "+hint2);
         System.out.println("Hint #3 "+hint3);
         isArrayHaveSome_(wordToArray,emptyArray);
-        System.out.print("Congratulations!");
+        DrawWin text=new DrawWin();
+        text.paint();
     }
     public static void isArrayHaveSome_(char[]wordToArray,char[]emptyArray) {
         char scan;
@@ -37,7 +38,8 @@ public class FieldOfDreams {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the letter of the word ");
         char a=scanner.next().charAt(0);
-        return a;
+        char result=toLowerCase(a);
+        return result;
     }
     public static void checkLetters(char letter,char[] wordToArray,char[]emptyArray){
         for(int i=0;i<emptyArray.length;i++){
