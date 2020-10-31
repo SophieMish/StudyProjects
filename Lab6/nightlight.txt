@@ -1,0 +1,28 @@
+struct NightLight {
+    int price;
+    int weight;
+    int power;
+    int voltage;
+    bool have_touch_control;
+    bool phoneApp_control;
+};
+
+void init(NightLight*,
+          int price = 3490,
+          int weight = 680,//grams
+          int power = 10,
+          int voltage = 12,
+          bool have_touch_control = true,
+          bool phoneApp_control = true//control from a smartphone
+);
+
+void view(NightLight*);
+
+void switchOn(NightLight*);
+
+void switchOff(NightLight*);
+
+void connectWithPhone(NightLight*);
+
+void switchModeOfLight(NightLight*){
+}

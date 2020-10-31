@@ -1,0 +1,35 @@
+struct NightLight {
+    int price;
+    int power;
+    int voltage;
+    int weight;
+    bool have_touch_control;
+    bool phoneApp_control;
+    int extra_functions; 
+    union {
+        bool voice_assistant;  // a nightlight a ability to talk to you,           mark = 0
+        bool clock; // a nightlight can be a alarm clock and a timer,              mark = 1
+        bool loudspeaker; //a nightlight not only a lamp but can play music,       mark = 2
+    };
+};
+
+void init(NightLight*,
+          int price = 3490,
+          int weight = 680,
+          int power = 10,
+          int voltage = 12,
+          bool phoneApp_control = true,
+          bool have_touch_control = true,
+          int extra_functions = 0 // voice assistant is default 
+);
+
+void view(NightLight*);
+
+void switchOn(NightLight*);
+
+void switchOff(NightLight*);
+
+void connectWithPhone(NightLight*);
+
+void switchModeOfLight(NightLight*);
+
